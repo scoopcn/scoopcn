@@ -1,0 +1,34 @@
+{
+    "version": "11.0.0.33826",
+    "description": "Sunlogin by Oray",
+    "homepage": "https://sunlogin.oray.com/",
+    "license": {
+        "identifier": "Freeware"
+    },
+    "url": "https://down.oray.com/sunlogin/windows/SunloginClient_11.0.0.33826_x64.exe#/Sunlogin.exe",
+    "hash": "md5:82c2c77f82203be1ced376ccfd022c6b",
+    "installer": {
+        "script": [
+            "$path = 'HKCU:\\Software\\Oray\\SunLogin\\SunloginClient'",
+            "New-Item $path -ErrorAction SilentlyContinue -Force | Out-Null",
+            "New-ItemProperty -Path $path -Name \"${version}_IsRunSeted\" -Value \"1\" -PropertyType String -ErrorAction SilentlyContinue"
+        ]
+    },
+    "shortcuts": [
+        [
+            "Sunlogin.exe",
+            "Sunlogin"
+        ]
+    ],
+    "checkver": {
+        "url": "https://client-api.oray.com/softwares/SUNLOGIN_X_WINDOWS?x64=1",
+        "jp": "$.versionno"
+    },
+    "autoupdate": {
+        "url": "https://down.oray.com/sunlogin/windows/SunloginClient_$version_x64.exe#/Sunlogin.exe",
+        "hash": {
+            "url": "https://client-api.oray.com/softwares/SUNLOGIN_X_WINDOWS?x64=1",
+            "jp": "$.md5"
+        }
+    }
+}
