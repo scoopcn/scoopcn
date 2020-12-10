@@ -1,13 +1,13 @@
 {
-    "version": "7.0.6.11",
+    "version": "7.0.8.2",
     "description": "baidu net disk client",
     "homepage": "http://pan.baidu.com/",
     "license": {
         "identifier": "Unknown",
         "url": "http://pan.baidu.com/disk/duty/"
     },
-    "url": "http://wppkg.baidupcs.com/issue/netdisk/yunguanjia/BaiduNetdisk_7.0.6.11.exe#/dl.7z",
-    "hash": "c194fb634519faf96383da48942eee83b32b9ef6cfa61e4c03ea3fe5ed010bb9",
+    "url": "http://wppkg.baidupcs.com/issue/netdisk/yunguanjia/BaiduNetdisk_7.0.8.2.exe#/dl.7z",
+    "hash": "197665b6c4058391132b30498788a415df5bd2eb20ab24ec7c6b27ba0bfdb36c",
     "pre_install": "Remove-Item -R -Path \"$dir\\`$TEMP\",\"$dir\\`$PLUGINSDIR\"",
     "shortcuts": [
         [
