@@ -1,0 +1,30 @@
+{
+    "version": "2.4.0.463",
+    "description": "tencent meeting",
+    "homepage": "https://meeting.tencent.com/index.html",
+    "license": {
+        "identifier": "Freeware"
+    },
+    "url": "https://updatecdn.meeting.qq.com/e07529b276294953cb01d7ed1588cbc9/TencentMeeting_0300000000_2.4.0.463.publish.exe#/WeMeet.exe",
+    "hash": "md5:e07529b276294953cb01d7ed1588cbc9",
+    "installer": {
+        "script": [
+            "Start-Process -Wait -WindowStyle Hidden cmd \"/c call `\"$dir\\WeMeet.exe`\" /S\" -Verb RunAs",
+            "Remove-Item \"$dir\\TimSetup.exe\" -ErrorAction SilentlyContinue"
+        ]
+    },
+    "uninstaller": {
+        "script": "Start-Process -Wait -WindowStyle Hidden cmd \"/c call `\"C:\\Program Files (x86)\\Tencent\\WeMeet\\$version\\WeMeetUninstall.exe`\" /S\" -Verb RunAs"
+    },
+    "checkver": {
+        "url": "https://bonjour.swoosh.run/post/https:meeting.tencent.com/wemeet-webapi/v2/config/query-download-info?[{%22instance%22:%22windows%22,%22type%22:%220300000000%22}]",
+        "regex": "\"md5\":\"(?<hash>[a-f0-9]+)\".+\"version\":\"([\\d\\.]+)\""
+    },
+    "autoupdate": {
+        "url": "https://updatecdn.meeting.qq.com/$matchHash/TencentMeeting_0300000000_$version.publish.exe#/WeMeet.exe",
+        "hash": {
+            "url": "https://bonjour.swoosh.run/post/https:meeting.tencent.com/wemeet-webapi/v2/config/query-download-info?[{%22instance%22:%22windows%22,%22type%22:%220300000000%22}]",
+            "find": "$md5"
+        }
+    }
+}
