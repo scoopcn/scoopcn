@@ -6,7 +6,7 @@
 - `tim` **TIM - 办公版QQ**
 - `wechat` **微信**  
 - `sunlogin` **向日葵**
-
+- [And More!!!](https://github.com/scoopcn/scoopcn/tree/master/bucket)
 ## How to use 
 ### Just the same as using scoop
 
