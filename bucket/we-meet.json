@@ -1,12 +1,12 @@
 {
-    "version": "2.5.1.402",
+    "version": "2.5.1.403",
     "description": "tencent meeting",
     "homepage": "https://meeting.tencent.com/index.html",
     "license": {
         "identifier": "Freeware"
     },
-    "url": "https://updatecdn.meeting.qq.com/d82d8887bbf94e27ef12da5bc8cda29c/TencentMeeting_0300000000_2.5.1.402.publish.exe#/WeMeet.exe",
-    "hash": "md5:d82d8887bbf94e27ef12da5bc8cda29c",
+    "url": "https://updatecdn.meeting.qq.com/420f870abfb0872418266a235f75a121/TencentMeeting_0300000000_2.5.1.403.publish.exe#/WeMeet.exe",
+    "hash": "md5:420f870abfb0872418266a235f75a121",
     "installer": {
         "script": [
             "Start-Process -Wait -WindowStyle Hidden cmd \"/c call `\"$dir\\WeMeet.exe`\" /S\" -Verb RunAs",
