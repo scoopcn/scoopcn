@@ -1,12 +1,12 @@
 {
-    "version": "9.1.75",
+    "version": "9.2.27",
     "description": "Hello, KuGou!",
     "homepage": "https://www.kugou.com/",
     "license": {
         "identifier": "Unknown"
     },
     "url": "http://download.kugou.com/download/kugou_pc#/dl.7z",
-    "hash": "5b1d78f35f9d543ead27d6e5879c69169b1fc2e8f945e098f3260486ab1e9ae1",
+    "hash": "ab5b8cfe4d2ad0c791f97e64ccdff30a7bc0cd07849c3294ea2303f3002027b5",
     "installer": {
         "script": [
             "Get-ChildItem -Path  \"$dir\\`$PLUGINSDIR\" -Recurse -Exclude KuGou.7z | Remove-Item -Recurse -Force",
@@ -23,7 +23,7 @@
         ]
     ],
     "checkver": {
-        "url": "http://download.kugou.com/pc.html",
+        "url": "http://download.kugou.com/",
         "regex": "V (\\d+\\.\\d+\\.\\d+)"
     },
     "autoupdate": {
