@@ -1,5 +1,5 @@
 {
-    "version": "9.2.27",
+    "version": "nightly",
     "description": "Hello, KuGou!",
     "homepage": "https://www.kugou.com/",
     "license": {
@@ -22,10 +22,6 @@
             "KuGou"
         ]
     ],
-    "checkver": {
-        "url": "http://download.kugou.com/",
-        "regex": "V (\\d+\\.\\d+\\.\\d+)"
-    },
     "autoupdate": {
         "url": "http://download.kugou.com/download/kugou_pc#/dl.7z",
         "hash": {
