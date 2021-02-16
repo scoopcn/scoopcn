@@ -12,7 +12,7 @@
 
 ```bash
   # Add this bucket / 添加个桶
-  scoop bucket add scoopcn git@github.com:scoopcn/scoopcn.git
+  scoop bucket add scoopcn https://github.com/scoopcn/scoopcn.git
 
   # Install / 安装！！
 
