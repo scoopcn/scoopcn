@@ -5,23 +5,27 @@
     "license": {
         "identifier": "Freeware"
     },
-    "url": "https://updatecdn.meeting.qq.com/2bc65486b980ab6b81d0a67dbef49bfc/TencentMeeting_0300000000_2.8.8.403.publish.exe#/WeMeet.exe",
+    "url": "https://updatecdn.meeting.qq.com/2bc65486b980ab6b81d0a67dbef49bfc/TencentMeeting_0300000000_2.8.8.403.publish.exe#/dl.7z",
     "hash": "md5:2bc65486b980ab6b81d0a67dbef49bfc",
     "installer": {
         "script": [
-            "Start-Process -Wait -WindowStyle Hidden cmd \"/c call `\"$dir\\WeMeet.exe`\" /S\" -Verb RunAs",
-            "Remove-Item \"$dir\\TimSetup.exe\" -ErrorAction SilentlyContinue"
+            "Rename-Item \"$dir\\`$_6_\" -NewName \"$version\"",
+            "Move-Item \"$dir\\wemeetapp_new.exe\" \"$dir\\WeMeet.exe\"",
+            "Remove-Item -R -Path \"$dir\\`$WINDIR\",\"$dir\\`$PLUGINSDIR\",\"$dir\\wemeetapp.exe\""
         ]
     },
-    "uninstaller": {
-        "script": "Start-Process -Wait -WindowStyle Hidden cmd \"/c call `\"C:\\Program Files (x86)\\Tencent\\WeMeet\\$version\\WeMeetUninstall.exe`\" /S\" -Verb RunAs"
-    },
+    "shortcuts": [
+        [
+            "WeMeet.exe",
+            "腾讯会议"
+        ]
+    ],
     "checkver": {
         "url": "https://bonjour.swoosh.run/post/https:meeting.tencent.com/wemeet-webapi/v2/config/query-download-info?[{%22instance%22:%22windows%22,%22type%22:%220300000000%22}]",
         "regex": "\"md5\":\"(?<hash>[a-f0-9]+)\".+\"version\":\"([\\d\\.]+)\""
     },
     "autoupdate": {
-        "url": "https://updatecdn.meeting.qq.com/$matchHash/TencentMeeting_0300000000_$version.publish.exe#/WeMeet.exe",
+        "url": "https://updatecdn.meeting.qq.com/$matchHash/TencentMeeting_0300000000_$version.publish.exe#/dl.7z",
         "hash": {
             "url": "https://bonjour.swoosh.run/post/https:meeting.tencent.com/wemeet-webapi/v2/config/query-download-info?[{%22instance%22:%22windows%22,%22type%22:%220300000000%22}]",
             "find": "$md5"
