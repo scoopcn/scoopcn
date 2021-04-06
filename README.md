@@ -9,6 +9,7 @@
 - `we-meet` **腾讯会议**
 - `wechat-devtools` **微信开发者工具**
 - `wps` **WPS中文版**
+- `neo4jbrowser` **Neo4j浏览器**
 - [And More!!!](https://github.com/scoopcn/scoopcn/tree/master/bucket)
 ## How to use 
 ### Just the same as using scoop
