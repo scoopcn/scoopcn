@@ -10,6 +10,7 @@
 - `wechat-devtools` **微信开发者工具**
 - `wps` **WPS中文版**
 - `neo4jbrowser` **Neo4j Browser**
+- `3dtile` **世界上最快的 3dtiles 转换工具！**
 - [And More!!!](https://github.com/scoopcn/scoopcn/tree/master/bucket)
 ## How to use 
 ### Just the same as using scoop
