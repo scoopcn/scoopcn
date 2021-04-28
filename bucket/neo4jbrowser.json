@@ -1,12 +1,12 @@
 {
-    "version": "4.2.5",
+    "version": "4.2.6",
     "description": "Neo4j Browser is the general purpose user interface for working with Neo4j. Query, visualize, administrate and monitor the database.",
     "homepage": "https://github.com/neo4j/neo4j-browser",
     "license": {
         "identifier": "GPL-3.0 License"
     },
-    "url": "https://github.com/neo4j/neo4j-browser/releases/download/4.2.5/neo4j-browser-4.2.5.tgz",
-    "hash": "9ecb7ed3ab7b5731d444d2d7a6fde749f2da0ad4903f624bb1839265aa8f143b",
+    "url": "https://github.com/neo4j/neo4j-browser/releases/download/4.2.6/neo4j-browser-4.2.6.tgz",
+    "hash": "97c8331f3744efba0b28e1e9fd740b238514f9abccab88f019518333abef2e52",
     "extract_dir": "package",
     "pre_install": [
         "$WshShell = New-Object -comObject WScript.Shell",
