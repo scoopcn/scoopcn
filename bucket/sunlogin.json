@@ -5,8 +5,16 @@
     "license": {
         "identifier": "Freeware"
     },
-    "url": "https://down.oray.com/sunlogin/windows/SunloginClient_11.1.0.37237_x64.exe#/Sunlogin.exe",
-    "hash": "md5:db8cf7ce35c2e4faf9269453a3384a1b",
+    "architecture": {
+        "64bit": {
+            "url": "https://dl-cdn.oray.com/sunlogin/windows/SunloginClient_11.1.0.37237_X64.exe#/Sunlogin.exe",
+            "hash": "md5:db8cf7ce35c2e4faf9269453a3384a1b"
+        },
+        "32bit": {
+            "url": "https://dl-cdn.oray.com/sunlogin/windows/SunloginClient_11.1.0.37237.exe#/Sunlogin.exe",
+            "hash": "md5:672915318c5e0a1d174f3629dea9b99d"
+        }
+    },
     "installer": {
         "script": [
             "$path = 'HKCU:\\Software\\Oray\\SunLogin\\SunloginClient'",
@@ -22,13 +30,25 @@
     ],
     "checkver": {
         "url": "https://client-api.oray.com/softwares/SUNLOGIN_X_WINDOWS?x64=1",
-        "jp": "$.versionno"
+        "jp": "$.downloadurl",
+        "re": "/SunloginClient_([\\d\\.]+)_(?<arch>[Xx\\d]+)"
     },
     "autoupdate": {
-        "url": "https://down.oray.com/sunlogin/windows/SunloginClient_$version_x64.exe#/Sunlogin.exe",
-        "hash": {
-            "url": "https://client-api.oray.com/softwares/SUNLOGIN_X_WINDOWS?x64=1",
-            "jp": "$.md5"
+        "architecture": {
+            "64bit": {
+                "url": "https://dl-cdn.oray.com/sunlogin/windows/SunloginClient_$version_$matchArch.exe#/Sunlogin.exe",
+                "hash": {
+                    "url": "https://client-api.oray.com/softwares/SUNLOGIN_X_WINDOWS?x64=1",
+                    "jp": "$.md5"
+                }
+            },
+            "32bit": {
+                "url": "https://dl-cdn.oray.com/sunlogin/windows/SunloginClient_$version.exe#/Sunlogin.exe",
+                "hash": {
+                    "url": "https://client-api.oray.com/softwares/SUNLOGIN_X_WINDOWS?x64=0",
+                    "jp": "$.md5"
+                }
+            }
         }
     }
 }
