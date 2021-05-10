@@ -9,9 +9,9 @@
     "hash": "md5:321e5e6e0818380d5e5d882feeee7103",
     "installer": {
         "script": [
-            "Rename-Item \"$dir\\`$_6_\" -NewName \"$version\"",
+            "Get-Item \"$dir\\`$_?_\" | Rename-Item -NewName \"$version\"",
             "Move-Item \"$dir\\wemeetapp_new.exe\" \"$dir\\WeMeet.exe\"",
-            "Remove-Item -R -Path \"$dir\\`$WINDIR\",\"$dir\\`$PLUGINSDIR\",\"$dir\\wemeetapp.exe\""
+            "Remove-Item -R -Path \"$dir\\`$WINDIR\",\"$dir\\`$PLUGINSDIR\",\"$dir\\`$TEMP\",\"$dir\\wemeetapp.exe\""
         ]
     },
     "shortcuts": [
