@@ -1,12 +1,12 @@
 {
-    "version": "2.11.4.417",
+    "version": "2.12.3.408",
     "description": "tencent meeting",
     "homepage": "https://meeting.tencent.com/index.html",
     "license": {
         "identifier": "Freeware"
     },
-    "url": "https://updatecdn.meeting.qq.com/2028d3bd2938690c456be4daeb244f75/TencentMeeting_0300000000_2.11.4.417.publish.exe#/dl.7z",
-    "hash": "md5:2028d3bd2938690c456be4daeb244f75",
+    "url": "https://updatecdn.meeting.qq.com/ea3c39a8e3aaa71630aa4d2fdd0ccc19/TencentMeeting_0300000000_2.12.3.408.publish.exe#/dl.7z",
+    "hash": "md5:ea3c39a8e3aaa71630aa4d2fdd0ccc19",
     "installer": {
         "script": [
             "Get-Item \"$dir\\`$_?_\" | Rename-Item -NewName \"$version\"",
