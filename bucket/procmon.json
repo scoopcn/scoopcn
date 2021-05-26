@@ -1,12 +1,12 @@
 {
-    "version": "v3.80",
+    "version": "v3.81",
     "description": "Process Monitor",
     "homepage": "https://docs.microsoft.com/en-us/sysinternals/downloads/procmon",
     "license": {
         "identifier": "Freeware"
     },
     "url": "https://download.sysinternals.com/files/ProcessMonitor.zip",
-    "hash": "e910d88c092f74d490a6208c81cac78014720433fc1ea76bb2cc52b6e607f0fa",
+    "hash": "9408933f2aaafb5c0faf38b5a45fb4ffb8278423d9fecafd34175509e528226d",
     "architecture": {
         "64bit": {
             "shortcuts": [
