@@ -1,12 +1,12 @@
 {
-    "version": "10495.12012.2019",
+    "version": "10577.12012.2019",
     "description": "Complete office suite.",
     "homepage": "https://www.wps.cn",
     "license": {
         "identifier": "Freeware"
     },
-    "url": "https://pacakge.cache.wpscdn.cn/wps/download/W.P.S.10495.12012.2019.exe",
-    "hash": "b1e0d5ab8c879114c43dca1a58cafa297341584ab5c7034e404d375d8892d3bd",
+    "url": "https://pacakge.cache.wpscdn.cn/wps/download/W.P.S.10577.12012.2019.exe",
+    "hash": "d5d26587875cda7f139b4edce1d364353f04c26d3b917b814aacb8fa5be280c6",
     "pre_install": [
         "Expand-7zipArchive \"$dir\\$fname\"",
         "Expand-7zipArchive \"$dir\\`$_11_\\`$EXEFILE\" -Switches '-t#'",
