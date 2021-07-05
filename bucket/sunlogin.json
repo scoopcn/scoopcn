@@ -1,5 +1,5 @@
 {
-    "version": "11.1.2.38529",
+    "version": "12.0.0.39380",
     "description": "Sunlogin by Oray",
     "homepage": "https://sunlogin.oray.com/",
     "license": {
@@ -7,12 +7,12 @@
     },
     "architecture": {
         "64bit": {
-            "url": "https://dl-cdn.oray.com/sunlogin/windows/SunloginClient_11.1.2.38529_x64.exe#/Sunlogin.exe",
-            "hash": "md5:be65f20dcc142863143e20f8fc873592"
+            "url": "https://dl-cdn.oray.com/sunlogin/windows/SunloginClient_12.0.0.39380_x64.exe#/Sunlogin.exe",
+            "hash": "md5:c159d477b8ecf0976d62195f8ae6d5b4"
         },
         "32bit": {
-            "url": "https://dl-cdn.oray.com/sunlogin/windows/SunloginClient_11.1.2.38529.exe#/Sunlogin.exe",
-            "hash": "md5:206cceb18d539f76fb135f92cc7a2ef6"
+            "url": "https://dl-cdn.oray.com/sunlogin/windows/SunloginClient_12.0.0.39380.exe#/Sunlogin.exe",
+            "hash": "md5:0dc8b3b0cf68ba3018a87d0bbf280b4c"
         }
     },
     "installer": {
