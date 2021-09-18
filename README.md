@@ -26,3 +26,6 @@
   scoop install tim
 ```
   
+## Tips
+
+The source of a utility service `bonjour.swoosh.run/post` used in [we-meet](https://github.com/scoopcn/scoopcn/blob/master/bucket/we-meet.json) could be found [here](https://github.com/scoopcn/poster)
