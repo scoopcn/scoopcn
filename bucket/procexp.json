@@ -1,12 +1,12 @@
 {
-    "version": "v16.32",
+    "version": "v16.43",
     "description": "Process Explorer",
     "homepage": "https://docs.microsoft.com/en-us/sysinternals/downloads/process-explorer",
     "license": {
         "identifier": "Freeware"
     },
     "url": "https://download.sysinternals.com/files/ProcessExplorer.zip",
-    "hash": "d6b555f233ec477fef392290182ff99f2ae3abe0d9a77c2f739bc8afaea51941",
+    "hash": "683d1507c5fee0ddd8a99366237820623bd634d73006c3b174a7ddf4aefb359d",
     "architecture": {
         "64bit": {
             "shortcuts": [

@@ -10,7 +10,8 @@
 - `wechat-devtools` **微信开发者工具**
 - `wps` **WPS中文版**
 - `neo4jbrowser` **Neo4j Browser**
-- `3dtile` **世界上最快的 3dtiles 转换工具！** [🚀🚀🚀](https://github.com/fanvanzh/3dtiles)
+- `wxwork` **企业微信**
+- `dingtalk-gov` **浙政钉**
 - [And More!!!](https://github.com/scoopcn/scoopcn/tree/master/bucket)
 ## How to use 
 ### Just the same as using scoop
@@ -25,3 +26,6 @@
   scoop install tim
 ```
   
+## Tips
+
+The source of a utility service `bonjour.swoosh.run/post` used in [we-meet](https://github.com/scoopcn/scoopcn/blob/master/bucket/we-meet.json) could be found [here](https://github.com/scoopcn/poster)
