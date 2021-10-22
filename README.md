@@ -11,6 +11,7 @@
 - `wps` **WPS中文版**
 - `neo4jbrowser` **Neo4j Browser**
 - `wxwork` **企业微信**
+- `dingtalk` **钉钉**
 - `dingtalk-gov` **浙政钉**
 - [And More!!!](https://github.com/scoopcn/scoopcn/tree/master/bucket)
 ## How to use 
