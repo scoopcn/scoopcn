@@ -27,6 +27,6 @@
         "regex": "W\\.P\\.S\\.([\\d.]+)\\.exe"
     },
     "autoupdate": {
-        "url": "https://pacakge.cache.wpscdn.cn/wps/download/W.P.S.$version.exe"
+        "url": "https://official-package.wpscdn.cn/wps/download/W.P.S.$version.exe"
     }
 }
