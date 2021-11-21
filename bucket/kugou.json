@@ -5,7 +5,7 @@
     "license": {
         "identifier": "Unknown"
     },
-    "url": "http://download.kugou.com/download/kugou_pc#/dl.7z"
+    "url": "http://download.kugou.com/download/kugou_pc#/dl.7z",
     "installer": {
         "script": [
             "Get-ChildItem -Path  \"$dir\\`$PLUGINSDIR\" -Recurse -Exclude KuGou.7z | Remove-Item -Recurse -Force",
