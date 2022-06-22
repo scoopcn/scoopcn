@@ -1,10 +1,10 @@
 🎉🎉
 
-## Popular softwares currently available 
+## Popular softwares currently available
 
 - `baidudisk` **百度网盘**
 - `tim` **TIM - 办公版QQ**
-- `wechat` **微信**  
+- `wechat` **微信**
 - `sunlogin` **向日葵**
 - `we-meet` **腾讯会议**
 - `wechat-devtools` **微信开发者工具**
@@ -14,7 +14,7 @@
 - `dingtalk` **钉钉**
 - `dingtalk-gov` **浙政钉**
 - [And More!!!](https://github.com/scoopcn/scoopcn/tree/master/bucket)
-## How to use 
+## How to use
 ### Just the same as using scoop
 
 ```bash
@@ -26,7 +26,7 @@
   scoop install baidudisk
   scoop install tim
 ```
-  
+
 ## Tips
 
 The source of a utility service `bonjour.swoosh.run/post` used in [we-meet](https://github.com/scoopcn/scoopcn/blob/master/bucket/we-meet.json) could be found [here](https://github.com/scoopcn/poster)
