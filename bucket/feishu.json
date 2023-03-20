@@ -6,7 +6,6 @@
         "identifier": "Freeware"
     },
     "url": "https://sf3-cn.feishucdn.com/obj/ee-appcenter/e9fc4449/Feishu-win32_ia32-6.0.5-signed.exe#/dl.7z",
-    "pre_install": "Remove-Item -R -Path \"$dir\\uninst.exe.nsis\",\"$dir\\`$PLUGINSDIR\"",
     "hash": "md5:3ee332328230243829689e63200cc06f",
     "shortcuts": [
         [
