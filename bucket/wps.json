@@ -1,12 +1,12 @@
 {
-    "version": "19770",
+    "version": "20305",
     "description": "Complete office suite.",
     "homepage": "https://www.wps.cn",
     "license": {
         "identifier": "Freeware"
     },
-    "url": "https://official-package.wpscdn.cn/wps/download/WPS_Setup_19770.exe",
-    "hash": "5bed23c47701eced04ac7aca4498d2b18adfb186f0158baf60712d74d23c3098",
+    "url": "https://official-package.wpscdn.cn/wps/download/WPS_Setup_20305.exe",
+    "hash": "8640eaf149945996669d3677d6936e4f4e8dfdd5a376f90f717f3e67f8bebf1e",
     "pre_install": [
         "Expand-7zipArchive \"$dir\\$fname\"",
         "Expand-7zipArchive \"$dir\\`$_11_\\`$EXEFILE\" -Switches '-t#'",
