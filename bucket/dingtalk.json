@@ -6,11 +6,11 @@
         "identifier": "Freeware"
     },
     "url": "https://dtapp-pub.dingtalk.com/dingtalk-desktop/win_installer/Release/overseas/DingTalk_v7.8.8.250704005.exe#/dl.7z",
-    "pre_install": "Remove-Item -R -Path \"$dir\\uninst.exe.nsis\",\"$dir\\`$PLUGINSDIR\"",
+    "pre_install": "Move-Item \"$dir\\build\\dist\\*\" -Destination \"$dir\"",
     "hash": "b084339cb4d437a6155b5a626d46b3c059ee877b79d00ccc221b3ffda21635ab",
     "shortcuts": [
         [
-            "DingtalkLauncher.exe",
+            "DingTalk.exe",
             "钉钉"
         ]
     ],
