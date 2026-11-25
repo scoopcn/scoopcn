@@ -1,0 +1,37 @@
+{
+    "version": "1.0.26",
+    "description": "把 iPhone 或 iPad 变成 Windows 电脑的摄像头、麦克风、触控板和键盘",
+    "homepage": "https://vgoapp.com/remotecrab/",
+    "license": {
+        "identifier": "Proprietary",
+        "url": "https://vgoapp.com/remotecrab/privacy/"
+    },
+    "architecture": {
+        "64bit": {
+            "url": "https://vgoapp.com/downloads/RemoteCrab-1.0.26-setup.zip",
+            "hash": "e4903472edd703095d1f10c0786db538cbe4443d064d1312d03361bc0f8d4a44"
+        }
+    },
+    "shortcuts": [
+        [
+            "remotecrab.exe",
+            "RemoteCrab"
+        ]
+    ],
+    "checkver": {
+        "url": "https://vgoapp.com/downloads/windows/manifest.json",
+        "jsonpath": "$.version"
+    },
+    "autoupdate": {
+        "architecture": {
+            "64bit": {
+                "url": "https://vgoapp.com/downloads/RemoteCrab-$version-setup.zip"
+            }
+        }
+    },
+    "notes": [
+        "便携安装，不需要管理员权限，不写 Program Files。",
+        "虚拟摄像头需要驱动：用 `scoop prefix remotecrab` 找到目录，管理员运行其中的 install.cmd。",
+        "同一个网络内免费；离开自己网络的远程访问是订阅。"
+    ]
+}
